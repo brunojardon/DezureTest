@@ -7,22 +7,35 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      color: {
-        "50": "#f6f6f6",
-        "100": "#e7e7e7",
-        "200": "#d1d1d1",
-        "300": "#b0b0b0",
-        "400": "#888888",
-        "500": "#6d6d6d",
-        "600": "#5d5d5d",
-        "700": "#4f4f4f",
-        "800": "#454545",
-        "900": "#3d3d3d",
-        "950": "#262626",
-      },
-    },
     extend: {
+      colors: {
+        'red': {
+          '50': '#fef2f2',
+          '100': '#fee2e2',
+          '200': '#fecaca',
+          '300': '#fca5a5',
+          '400': '#f87171',
+          '500': '#ef4444',
+          '600': '#dc2626',
+          '700': '#b91c1c',
+          '800': '#991b1b',
+          '900': '#7f1d1d',
+          '950': '#450a0a',
+        },
+        'stone': {
+          '50': '#fafaf9',
+          '100': '#f5f5f4',
+          '200': '#e7e5e4',
+          '300': '#d6d3d1',
+          '400': '#a8a29e',
+          '500': '#78716c',
+          '600': '#57534e',
+          '700': '#44403c',
+          '800': '#292524',
+          '900': '#1c1917',
+          '950': '#0c0a09',
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -32,4 +45,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

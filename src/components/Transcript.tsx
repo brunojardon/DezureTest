@@ -24,7 +24,7 @@ const Transcript: React.FC<TranscriptProps> = ({ transcript }) => {
         <div
           key={index}
           className={
-            "cursor-pointer transition-colors duration-300 hover:bg-color-600 text-pretty w-full p-2 mb-2 rounded-md " +
+            "cursor-pointer transition-colors duration-300 hover:bg-stone-800 text-pretty w-full p-2 mb-2 rounded-md " +
             `${index === currentSegment && "font-bold underline bg-color-700"}`
           }
           onClick={() => handleSeek(segment.start)}
@@ -34,8 +34,8 @@ const Transcript: React.FC<TranscriptProps> = ({ transcript }) => {
           <span
             className={
               segment.role === "agent"
-                ? "text-color-300"
-                : "text-color-100 font-bold"
+                ? "text-stone-400 font-bold"
+                : "text-stone-100 font-bold"
             }
           >
             {segment.role}:{" "}
